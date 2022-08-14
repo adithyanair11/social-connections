@@ -32,18 +32,18 @@ function bfs(adjacencyList, origin, destination){
 
     while(q.length > 0){
         const partialRoute = q.shift();
-        const [airport] = partialRoute.slice(-1);
+        const [name] = partialRoute.slice(-1);
         
-        if(airport === destination) {
+        if(name === destination) {
             possibleRoutes.push(partialRoute);
             continue;
         }
 
-        for(const neighbour of adjacencyList.get(airport)){
+        for(const neighbour of adjacencyList.get(name)){
             if(!visited.has(neighbour)) q.push([...partialRoute, neighbour]);
         }
 
-        visited.add(airport);
+        visited.add(name);
     }
 
     return possibleRoutes;
