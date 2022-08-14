@@ -1,0 +1,27 @@
+.input-box{
+    height:50px;
+    max-width:400px;
+}
+.form{
+    display: flex;
+    width: 100%;
+}
+.input{
+    margin-right: 0.3em;
+    height:50px;
+    padding: 0 1em;
+    font-family: inherit;
+    font-size: 1rem;
+    outline:none;
+    border:1px solid black;
+}
+
+@media (max-width: 768px){
+  .input-box{
+    height: 40px;
+  }
+  .input{
+    height: 40px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,59 @@
+.App{
+    background-color: #101315;
+    width:100vw;
+    height: 100vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:2em 0;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.heading{
+    margin: 80px 0 0 80px;
+    text-align: center;
+    background-image:-webkit-linear-gradient(10deg, #ffaa00, #ff6a00);
+    background-clip: text;
+    color:transparent;
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 100px;
+    animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.2;
+        line-height: 200px;
+    }
+    to{
+        opacity: 1;
+        line-height: 100px;
+    }
+}
+
+@media (max-width:768px){
+    .header{
+        flex-direction: column;
+        gap:1.5em 0;
+    }
+    .heading{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}

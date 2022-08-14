@@ -1,0 +1,41 @@
+.button-container{
+    min-width: 100px;
+    width:auto;
+    height:50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding:0 25px 0 25px;
+    font-size:15px;
+    background-color: #000;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: bolder;
+    border:none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add{
+    background-color: #4285f4;
+    color:#fff;
+}
+
+.find{
+    background-color: #db4437;
+    color: #fff;
+}
+
+.close{
+    margin-top:2em;
+}
+
+@media (max-width:768px){
+    .button-container{
+        height: 40px;
+        font-size: 12px;
+        padding: 0 20px 0 20px;
+        line-height: 40px;
+    }
+}
