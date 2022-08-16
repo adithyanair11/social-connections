@@ -1,6 +1,6 @@
 .modal {
     width: clamp(50%, 700px, 90%);
-    height: min(60%, 300px);
+    height: min(60%, 400px);
     background-color: #f4b400;
     margin: auto;
     padding: 0 2rem;
@@ -27,17 +27,6 @@
     align-items: center;
   }
 
-  /* .select{
-    margin:0 0.3em;
-    height:50px;
-    padding: 0 1em;
-    font-family: inherit;
-    font-size: 1rem;
-    outline:none;
-    border:1px solid black;
-    flex: 1;
-  } */
-  
   .connected-items{
     display: flex;
     gap:0 1em;

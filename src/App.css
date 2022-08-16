@@ -33,7 +33,6 @@
     font-size: 4rem;
     font-weight: bolder;
     line-height: 100px;
-    animation: slide-up 2s;
 }
 
 @keyframes slide-up {
@@ -55,5 +54,17 @@
     .heading{
         font-size: 2rem;
         line-height: 50px;
+        margin: auto;
+        animation: slide-up 2s;
+    }
+    @keyframes slide-up {
+        from {
+            opacity: 0.2;
+            line-height: 100px;
+        }
+        to{
+            opacity: 1;
+            line-height: 50px;
+        }
     }
 }
