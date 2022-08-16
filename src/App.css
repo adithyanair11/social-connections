@@ -33,6 +33,7 @@
     font-size: 4rem;
     font-weight: bolder;
     line-height: 100px;
+    animation: slide-up 2s;
 }
 
 @keyframes slide-up {
