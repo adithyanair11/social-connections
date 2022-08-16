@@ -1,5 +1,5 @@
 .modal {
-    width: clamp(50%, 700px, 90%);
+    width: clamp(50%, 400px, 90%);
     height: min(60%, 400px);
     background-color: #f4b400;
     margin: auto;
