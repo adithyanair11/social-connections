@@ -160,7 +160,7 @@ export const Modal = ({handleClose,user}) => {
                         onChange={sourceChange}
                         value={source || ''}
                         />
-                    <Button>find mutuals</Button>
+                    <Button>find</Button>
                     <input
                         className='input'
                         type="text"
