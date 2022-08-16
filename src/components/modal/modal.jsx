@@ -1,5 +1,5 @@
 import './modal.css';
-import { useState,useEffect } from 'react';
+import { useState} from 'react';
 import { useSelector,useDispatch } from 'react-redux';
 import { selectUsers } from '../../store/users/users.selector';
 import { addConnection } from '../../store/users/users.action';
@@ -37,7 +37,7 @@ export const Modal = ({handleClose,user}) => {
     const [source,setSource] = useState('');
     const [target,setTarget] = useState('');
     const [result,setResult] = useState([]);
-    const [error,setError] = useState(undefined);
+    const [error,setError] = useState('');
 
     const doesExist = (name) => {
         const findUser = users.find(user => user.name === name);
